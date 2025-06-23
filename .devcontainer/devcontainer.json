@@ -1,0 +1,16 @@
+{
+  "name": "GitHub Code Reader AI",
+  "image": "africanfuture/devbox:latest",
+  "postCreateCommand": "pip install -r backend/requirements.txt && npm install --prefix frontend",
+  "forwardPorts": [8000, 5173],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "esbenp.prettier-vscode",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
